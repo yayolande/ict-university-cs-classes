@@ -1,4 +1,4 @@
-# Assignment 1: [Software Verification & Validation]
+# [Assignment 1] Software Verification & Validation
 
 ## Author
 

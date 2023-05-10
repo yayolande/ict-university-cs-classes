@@ -8,7 +8,7 @@
 
 ## Course Outline
 
-- **Schedule**: Mon/Tues ?? , 3PM - 5PM
+- **Schedule**: Tues , 3PM - 5PM
 
 
 ## Link
