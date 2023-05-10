@@ -67,7 +67,14 @@ table = pd.DataFrame(data)
 table_2 = pd.DataFrame(data, index = ["day1", "day2", "day3"]) # Per default, for each row, label are indexed from '0' and incremented by one for each row
 # However, when using 'index = [...]', we are overriding the default values by a custom ones
 
-file_csv = "data.csv"
+import os
+
+project_dir = os.path.dirname(__file__)
+os.chdir(project_dir)
+
+# project_dir = project_dir + "/"
+project_dir = ""
+file_csv = project_dir + "data.csv"
 tableCsv = pd.read_csv(file_csv)
 
 print(table.loc[0]) # This return a pandas 'series' for row '0'
@@ -85,7 +92,7 @@ print(pd.options.display.max_rows) # Display the cutoff threshold for row items 
 # v0.4.0 --- Analyzing DataFrame
 #------------------------------------------------------------------
 
-file_csv = "data.csv"
+file_csv = project_dir + "data.csv"
 pf = pd.read_csv(file_csv)
 print(pf.head(10)) # similar than "head" cli, only show first items in table (header included)
 print(pf.tail())
@@ -101,7 +108,7 @@ print(pf.info()) # give info about the dataset columns (count, data types, names
 # print(file.read())
 # file.close()
 
-file_date_data = "data_v2.csv"
+file_date_data = project_dir + "data_v2.csv"
 table = pd.read_csv(file_date_data)
 table.dropna(inplace = True)
 
@@ -130,7 +137,7 @@ print(mean)
 # v0.6.0 --- Cleaning Data (Wrong Format)
 #------------------------------------------------------------------
 
-file_date_data = "data_v2.csv"
+file_date_data = project_dir + "data_v2.csv"
 table = pd.read_csv(file_date_data)
 table['Date'] = pd.to_datetime(table['Date'], errors = 'coerce')
 table.dropna(subset = ['Date'], inplace = True)
@@ -141,7 +148,7 @@ print(table.to_string())
 # v0.6.0 --- Cleaning Data (Wrong & Duplicated Data)
 #------------------------------------------------------------------
 
-file_date_data = "data_v2.csv"
+file_date_data = project_dir + "data_v2.csv"
 table = pd.read_csv(file_date_data)
 table.loc[7, 'Duration'] = 45
 
