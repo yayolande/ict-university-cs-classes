@@ -1,2 +1,5 @@
 2023.spring_23/30.network_forensics/20.assignments/08.tools/NetworkMiner_2-8/
 *.swp
+
+# Ignore the books
+2023.spring_23/20.intro_data_science/10.class_materials/20.books/
