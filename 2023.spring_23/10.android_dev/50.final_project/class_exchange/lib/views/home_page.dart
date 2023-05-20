@@ -18,7 +18,7 @@ class _HomePage extends State<HomePage> {
         title: Text (widget.titleBar),
       ),
       body: Center(
-        child: Text('hello World !'),
+        child: Text('hello World & Steveen!'),
       ),
     );
   }

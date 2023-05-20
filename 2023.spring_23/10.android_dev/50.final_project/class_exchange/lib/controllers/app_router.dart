@@ -1,3 +1,5 @@
+import 'package:class_exchange/models/user.dart';
+import 'package:class_exchange/views/login_page.dart';
 import 'package:go_router/go_router.dart';
 import 'package:class_exchange/views/my_home_page.dart';
 import 'package:class_exchange/views/home_page.dart';
@@ -7,7 +9,8 @@ class RouterApp {
 
   RouterApp() {
     _router = GoRouter(
-      initialLocation: RouterPath.home,
+      initialLocation: RouterPath.login,
+      // initialLocation: RouterPath.home,
       // errorBuilder:(context, state) => ErrorPage(),
       routes: [
         GoRoute(
@@ -18,10 +21,16 @@ class RouterApp {
         GoRoute(
           path: RouterPath.home,
           builder: (context, state) {
+            User? user = state.extra as User?;
+            // TODO: how to send 'user' to 'homepage' ?
             var homePage = HomePage();
             
             return homePage;
           }
+        ),
+        GoRoute(
+          path: RouterPath.login,
+          builder: (context, state) => LoginPage()
         ),
       ],
     );
