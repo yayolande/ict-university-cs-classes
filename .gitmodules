@@ -1,3 +1,6 @@
 [submodule "2023.spring_23/10.android_dev/50.final_project/class_exchange"]
 	path = 2023.spring_23/10.android_dev/50.final_project/class_exchange
 	url = /home/steveen/Documents/010.ICT_university/current/10.android_dev/50.final_project/class_exchange
+[submodule "2023.spring_23/30.network_forensics/10.class_materials"]
+	path = 2023.spring_23/30.network_forensics/10.class_materials
+	url = /home/steveen/Documents/010.ICT_university/10.cs_classes/2023.spring_23/30.network_forensics/10.class_materials
