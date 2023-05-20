@@ -4,7 +4,7 @@
 
 - **Name**: Boris Nges
 - **Whatsapp**: +237 6 78 17 35 15
-- **email**: ????
+- **email**: nges.boris@ictuniversity.edu.cm
 
 ## Course Outline
 
